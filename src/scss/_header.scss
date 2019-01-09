@@ -39,7 +39,7 @@
     font-family: 'Open Sans', sans-serif;
     color: #afa9a3;
     transition: $transition;
-    &:hover {
+    &:hover, &__active {
       color: #f7f3ec;
     }
   }
