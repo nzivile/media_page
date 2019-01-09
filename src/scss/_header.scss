@@ -1,5 +1,4 @@
 .header {
-  position: absolute;
   width: 100%;
   padding: 24px 0px;
   display: flex;
@@ -30,7 +29,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    alignt-items: center;
+    align-items: center;
   }
   &--menu-link {
     text-decoration: none;
