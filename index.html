@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="dist/css/index.css">
+    <title>Media page</title>
 </head>
 <body>
 
@@ -59,7 +60,7 @@
 
                     </div>
                 </div>
-                <div class="life--item">
+                <div class="life--item life--item__info">
                     <div class="life--info">
                         <div class="life--info-title">
                             Netoliese - <br/>
@@ -237,20 +238,23 @@
                 </div>
             </div>
             <div class="contacts--rezervation">
-                <div class="contacts--rezervation-title">
-                    <span class="contacts--rezervation-title__strong">Laiko</span> rezervacija susitikimui
-                </div>
-                <div class="contacts--rezervation-item">
-                    <input class="contacts--rezervation-input" placeholder="El. paštas" name="email"/>
-                </div>
-                <div class="contacts--rezervation-item">
-                    <input class="contacts--rezervation-input" placeholder="Telefonas" name="phone"/>
-                </div>
-                <div class="contacts--rezervation-item">
-                    <input class="contacts--rezervation-input" placeholder="Rezervuoju laiką susitikimui x d. x val."
-                           name="phone"/>
-                </div>
-                <input class="contacts--rezervation-submit" type="submit" value="siųsti"/>
+                <form id="contacts" action="/">
+                    <div class="contacts--rezervation-title">
+                        <span class="contacts--rezervation-title__strong">Laiko</span> rezervacija susitikimui
+                    </div>
+                    <div class="contacts--rezervation-item">
+                        <input class="contacts--rezervation-input" placeholder="El. paštas" name="email" type="email" required/>
+                    </div>
+                    <div class="contacts--rezervation-item">
+                        <input class="contacts--rezervation-input" placeholder="Telefonas" name="phone" required/>
+                    </div>
+                    <div class="contacts--rezervation-item">
+                        <input class="contacts--rezervation-input"
+                               placeholder="Rezervuoju laiką susitikimui x d. x val."
+                               name="phone" required/>
+                    </div>
+                    <input class="contacts--rezervation-submit" type="submit" value="siųsti"/>
+                </form>
             </div>
             <div class="contacts--name">
                 <div class="contacts--name__first">
@@ -270,6 +274,20 @@
         </div>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#contacts").on('submit', function(e){
+            e.preventDefault();
+            $.validate({
+                lang: 'lt'
+            });
+            //TODO SUBMIT
+        });
+    });
+</script>
 
 </body>
 </html>

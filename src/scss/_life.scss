@@ -9,7 +9,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1160px;
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   &--header {
     text-transform: uppercase;
@@ -38,6 +40,9 @@
       background-color: #584b3b;
       right: -1000px;
       z-index: 0;
+      @include tablet {
+        left: 25px;
+      }
     }
   }
   &--slider-controls {
@@ -88,8 +93,14 @@
     width: 100%;
     position: relative;
     z-index: 1;
+    @include tablet {
+      flex-direction: column;
+    }
   }
   &--item {
+    &__info {
+      padding-bottom: 90px;
+    }
     &__first {
       display: flex;
       flex-direction: column;
@@ -106,6 +117,9 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     width: 180px;
+    @include tablet {
+      display: none;
+    }
   }
   &--slide-img {
     width: 421px;
@@ -117,6 +131,16 @@
     margin-top: 80px;
     margin-left: 100px;
     box-shadow: 33px 23px 36px 4px rgba(0, 0, 0, 0.15);
+    @include small-desktop {
+      width: 300px;
+      height: 480px;
+      margin-top: 40px;
+      margin-left: 50px;
+    }
+    @include tablet {
+      width: 90%;
+      height: 300px;
+    }
   }
   &--info {
     display: flex;
@@ -124,6 +148,10 @@
     justify-content: center;
     padding-left: 100px;
     padding-top: 130px;
+    @include small-desktop {
+      padding-left: 50px;
+      padding-top: 60px;
+    }
   }
   &--info-title {
     text-transform: uppercase;

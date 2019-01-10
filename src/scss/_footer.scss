@@ -9,8 +9,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1160px;
+    width: 1200px;
     padding: 15px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include small-phone {
+      flex-direction: column;
+    }
   }
   &--logo {
     width: 75px;
@@ -19,6 +24,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    @include small-phone {
+      margin-bottom: 30px;
+    }
   }
   &--copy {
     font-size: 14px;
