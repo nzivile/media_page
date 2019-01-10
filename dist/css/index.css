@@ -582,3 +582,32 @@ html, body {
       letter-spacing: 4px;
       width: 250px;
       padding-top: 70px; }
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #302d28; }
+  .footer--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    padding: 15px 0; }
+  .footer--logo {
+    width: 75px;
+    height: 35px;
+    background-image: url("../../assets/img/logo_small-citus.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .footer--copy {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #afa9a3;
+    transition: 0.1s all ease-in; }
+  .footer--link {
+    text-decoration: none;
+    color: #f7f3ec; }
