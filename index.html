@@ -2,8 +2,12 @@
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/css/index.css">
     <title>Media page</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
 </head>
 <body>
 
@@ -170,28 +174,86 @@
 </div>
 
 <div class="testimonials full-width">
-    <div class="testimonials--container">
-        <div class="testimonials--logo">
-        </div>
-        <div class="testimonials--title">
-            nekilnojamojo turto vystytojas
-        </div>
-        <div class="testimonials--description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie erat vitae odio
-            auctor luctus ac id lorem. Aliquam aliquam massa et magna suscipit, eu vehicula dui
-            sollicitudin. Phasellus rhoncus, nulla at molestie vulputate, risus libero maximus nisl,
-            venenatis aliquet urna ligula sed nisi.
-        </div>
-        <div class="testimonials--pages">
-            <div class="testimonials--page">
+    <div class="">
+        <!-- Swiper -->
+        <div class="swiper-container testimonials--container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonials--logo">
+                    </div>
+                    <div class="testimonials--title">
+                        nekilnojamojo turto vystytojas
+                    </div>
+                    <div class="testimonials--description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie erat vitae odio
+                        auctor luctus ac id lorem. Aliquam aliquam massa et magna suscipit, eu vehicula dui
+                        sollicitudin. Phasellus rhoncus, nulla at molestie vulputate, risus libero maximus nisl,
+                        venenatis aliquet urna ligula sed nisi.
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials--logo">
+                    </div>
+                    <div class="testimonials--title">
+                        nekilnojamojo turto vystytojas
+                    </div>
+                    <div class="testimonials--description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie erat vitae odio
+                        auctor luctus ac id lorem. Aliquam aliquam massa et magna suscipit, eu vehicula dui
+                        sollicitudin. Phasellus rhoncus, nulla at molestie vulputate, risus libero maximus nisl,
+                        venenatis aliquet urna ligula sed nisi.
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials--logo">
+                    </div>
+                    <div class="testimonials--title">
+                        nekilnojamojo turto vystytojas
+                    </div>
+                    <div class="testimonials--description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie erat vitae odio
+                        auctor luctus ac id lorem. Aliquam aliquam massa et magna suscipit, eu vehicula dui
+                        sollicitudin. Phasellus rhoncus, nulla at molestie vulputate, risus libero maximus nisl,
+                        venenatis aliquet urna ligula sed nisi.
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials--logo">
+                    </div>
+                    <div class="testimonials--title">
+                        nekilnojamojo turto vystytojas
+                    </div>
+                    <div class="testimonials--description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie erat vitae odio
+                        auctor luctus ac id lorem. Aliquam aliquam massa et magna suscipit, eu vehicula dui
+                        sollicitudin. Phasellus rhoncus, nulla at molestie vulputate, risus libero maximus nisl,
+                        venenatis aliquet urna ligula sed nisi.
+                    </div>
+                </div>
             </div>
-            <div class="testimonials--page">
-            </div>
-            <div class="testimonials--page">
-            </div>
-            <div class="testimonials--page testimonials--page__active">
-            </div>
+
+            <!-- Add Pagination -->
+            <div class="testimonials--pages"></div>
         </div>
+
+        <!-- Swiper JS -->
+        <script src="dist/js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                },
+                pagination: {
+                    el: '.testimonials--pages',
+                    bulletClass: 'testimonials--page',
+                    bulletActiveClass: 'testimonials--page__active',
+                    clickable: true
+                }
+            });
+        </script>
     </div>
 </div>
 
@@ -243,7 +305,8 @@
                         <span class="contacts--rezervation-title__strong">Laiko</span> rezervacija susitikimui
                     </div>
                     <div class="contacts--rezervation-item">
-                        <input class="contacts--rezervation-input" placeholder="El. paštas" name="email" type="email" required/>
+                        <input class="contacts--rezervation-input" placeholder="El. paštas" name="email" type="email"
+                               required/>
                     </div>
                     <div class="contacts--rezervation-item">
                         <input class="contacts--rezervation-input" placeholder="Telefonas" name="phone" required/>
@@ -278,8 +341,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $("#contacts").on('submit', function(e){
+    $(document).ready(function () {
+        $("#contacts").on('submit', function (e) {
             e.preventDefault();
             $.validate({
                 lang: 'lt'

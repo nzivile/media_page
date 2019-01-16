@@ -13,6 +13,26 @@ html, body {
   width: 100%;
   position: relative; }
 
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
 .header {
   width: 100%;
   padding: 24px 0px;
@@ -411,7 +431,7 @@ html, body {
     left: 0;
     right: 0;
     z-index: 1; }
-  .testimonials--container {
+  .testimonials--container.swiper-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -420,6 +440,10 @@ html, body {
     padding-left: 20px;
     padding-right: 20px;
     z-index: 2; }
+  .testimonials--container .swiper-wrapper {
+    height: auto; }
+  .testimonials--container .swiper-slide {
+    flex-direction: column; }
   .testimonials--logo {
     width: 120px;
     height: 61px;
@@ -444,7 +468,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70px; }
+    width: 70px !important; }
   .testimonials--page {
     width: 14px;
     height: 14px;
