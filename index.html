@@ -2,7 +2,7 @@
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/css/index.css">
     <title>Media page</title>
 
@@ -98,24 +98,342 @@
         <div class="location--block">
             <div class="location--info">
                 <div class="location--tools">
-                    <div class="location--tool location--tool__shop">
+                    <div class="location--tool location--tool__shop location--tool__active" data-type="shop">
                     </div>
-                    <div class="location--tool location--tool__book">
+                    <div class="location--tool location--tool__book" data-type="book">
                     </div>
-                    <div class="location--tool location--tool__hospital location--tool__active">
+                    <div class="location--tool location--tool__hospital" data-type="hospital">
                     </div>
-                    <div class="location--tool location--tool__human">
+                    <div class="location--tool location--tool__human" data-type="human">
                     </div>
-                    <div class="location--tool location--tool__gym">
+                    <div class="location--tool location--tool__gym" data-type="gym">
                     </div>
-                    <div class="location--tool location--tool__itm">
+                    <div class="location--tool location--tool__itm" data-type="itm">
                     </div>
-                    <div class="location--tool location--tool__distance">
+                    <div class="location--tool location--tool__distance" data-type="distance">
                     </div>
                 </div>
-                <div class="location--list">
+                <div class="location--list location--list__active" data-type="shop">
                     <div class="location--list-title">
-                        Vaistinės ir gydymo įstaigos
+                        Vaistinės ir gydymo įstaigos -> SHOP
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Poliklinika
+                        </div>
+                        <div class="location--list-range">
+                            900
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Vaistinė "Pilanta"
+                        </div>
+                        <div class="location--list-range">
+                            600
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Šeimos sveikatos namai "Gyda"
+                        </div>
+                        <div class="location--list-range">
+                            750
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Marijos vaistinė
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Eurovaistinė (prekybos centre "Pupa")
+                        </div>
+                        <div class="location--list-range">
+                            800
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            B. Kiselienės sveikatingumo studija
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                </div>
+                <div class="location--list" data-type="book">
+                    <div class="location--list-title">
+                        Vaistinės ir gydymo įstaigos -> BOOK
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Poliklinika
+                        </div>
+                        <div class="location--list-range">
+                            900
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Vaistinė "Pilanta"
+                        </div>
+                        <div class="location--list-range">
+                            600
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Šeimos sveikatos namai "Gyda"
+                        </div>
+                        <div class="location--list-range">
+                            750
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Marijos vaistinė
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Eurovaistinė (prekybos centre "Pupa")
+                        </div>
+                        <div class="location--list-range">
+                            800
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            B. Kiselienės sveikatingumo studija
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                </div>
+                <div class="location--list" data-type="hospital">
+                    <div class="location--list-title">
+                        Vaistinės ir gydymo įstaigos -> HOSPITAL
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Poliklinika
+                        </div>
+                        <div class="location--list-range">
+                            900
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Vaistinė "Pilanta"
+                        </div>
+                        <div class="location--list-range">
+                            600
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Šeimos sveikatos namai "Gyda"
+                        </div>
+                        <div class="location--list-range">
+                            750
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Marijos vaistinė
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Eurovaistinė (prekybos centre "Pupa")
+                        </div>
+                        <div class="location--list-range">
+                            800
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            B. Kiselienės sveikatingumo studija
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                </div>
+                <div class="location--list" data-type="human">
+                    <div class="location--list-title">
+                        Vaistinės ir gydymo įstaigos -> HUMAN
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Poliklinika
+                        </div>
+                        <div class="location--list-range">
+                            900
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Vaistinė "Pilanta"
+                        </div>
+                        <div class="location--list-range">
+                            600
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Šeimos sveikatos namai "Gyda"
+                        </div>
+                        <div class="location--list-range">
+                            750
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Marijos vaistinė
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Eurovaistinė (prekybos centre "Pupa")
+                        </div>
+                        <div class="location--list-range">
+                            800
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            B. Kiselienės sveikatingumo studija
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                </div>
+                <div class="location--list" data-type="gym">
+                    <div class="location--list-title">
+                        Vaistinės ir gydymo įstaigos -> GYM
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Poliklinika
+                        </div>
+                        <div class="location--list-range">
+                            900
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Vaistinė "Pilanta"
+                        </div>
+                        <div class="location--list-range">
+                            600
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Šeimos sveikatos namai "Gyda"
+                        </div>
+                        <div class="location--list-range">
+                            750
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Marijos vaistinė
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Eurovaistinė (prekybos centre "Pupa")
+                        </div>
+                        <div class="location--list-range">
+                            800
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            B. Kiselienės sveikatingumo studija
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                </div>
+                <div class="location--list" data-type="itm">
+                    <div class="location--list-title">
+                        Vaistinės ir gydymo įstaigos -> ITM
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Poliklinika
+                        </div>
+                        <div class="location--list-range">
+                            900
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Vaistinė "Pilanta"
+                        </div>
+                        <div class="location--list-range">
+                            600
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Šeimos sveikatos namai "Gyda"
+                        </div>
+                        <div class="location--list-range">
+                            750
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Marijos vaistinė
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            Eurovaistinė (prekybos centre "Pupa")
+                        </div>
+                        <div class="location--list-range">
+                            800
+                        </div>
+                    </div>
+                    <div class="location--list-item">
+                        <div class="location--list-name">
+                            B. Kiselienės sveikatingumo studija
+                        </div>
+                        <div class="location--list-range">
+                            1200
+                        </div>
+                    </div>
+                </div>
+                <div class="location--list" data-type="distance">
+                    <div class="location--list-title">
+                        Vaistinės ir gydymo įstaigos -> DISTANCE
                     </div>
                     <div class="location--list-item">
                         <div class="location--list-name">
@@ -174,7 +492,7 @@
 </div>
 
 <div class="testimonials full-width">
-    <div class="">
+    <div class="testimonials--container full">
         <!-- Swiper -->
         <div class="swiper-container testimonials--container">
             <div class="swiper-wrapper">
@@ -243,6 +561,7 @@
         <script>
             var swiper = new Swiper('.swiper-container', {
                 loop: true,
+                slidesPerView: 1,
                 autoplay: {
                     delay: 2000,
                 },
@@ -305,16 +624,16 @@
                         <span class="contacts--rezervation-title__strong">Laiko</span> rezervacija susitikimui
                     </div>
                     <div class="contacts--rezervation-item">
-                        <input class="contacts--rezervation-input" placeholder="El. paštas" name="email" type="email"
-                               required/>
+                        <input class="contacts--rezervation-input" placeholder="El. paštas" name="email" type="text"
+                               id="email"/>
                     </div>
                     <div class="contacts--rezervation-item">
-                        <input class="contacts--rezervation-input" placeholder="Telefonas" name="phone" required/>
+                        <input class="contacts--rezervation-input" placeholder="Telefonas" name="phone"/>
                     </div>
                     <div class="contacts--rezervation-item">
                         <input class="contacts--rezervation-input"
                                placeholder="Rezervuoju laiką susitikimui x d. x val."
-                               name="phone" required/>
+                               name="message"/>
                     </div>
                     <input class="contacts--rezervation-submit" type="submit" value="siųsti"/>
                 </form>
@@ -343,12 +662,23 @@
 <script>
     $(document).ready(function () {
         $("#contacts").on('submit', function (e) {
+            $(".contacts--rezervation-item").removeClass('contacts--rezervation-item__error');
             e.preventDefault();
-            $.validate({
-                lang: 'lt'
-            });
-            //TODO SUBMIT
+            var email = $("#email").val();
+            var emailPattern = /\S+@\S+\.\S+/;
+            if (emailPattern.test(email) === false) {
+                $("#email").parent().addClass('contacts--rezervation-item__error');
+            } else {
+                alert('Užklausa išsiųsta.');
+            }
         });
+        $(".location--tool").on('click', function () {
+            var dataType = $(this).data('type');
+            $(".location--tool").removeClass('location--tool__active');
+            $('.location--list').removeClass('location--list__active');
+            $('.location--list[data-type="' + dataType + '"]').addClass('location--list__active');
+            $(this).addClass('location--tool__active');
+        })
     });
 </script>
 

@@ -131,11 +131,14 @@
     }
   }
   &--list {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     background-color: #f7f3ec;
     height: 100%;
+    &__active{
+      display: flex;
+    }
     @include small-phone {
       padding-left: 15px;
       padding-right: 15px;

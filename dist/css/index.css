@@ -234,7 +234,8 @@ html, body {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     line-height: 26px;
-    padding: 40px 0; }
+    padding: 40px 0;
+    max-width: 400px; }
   .life--info-button {
     text-transform: uppercase;
     text-decoration: none;
@@ -359,11 +360,13 @@ html, body {
     .location--tool__distance::before {
       background-image: url("../../assets/img/distance-icon.png"); }
   .location--list {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     background-color: #f7f3ec;
     height: 100%; }
+    .location--list__active {
+      display: flex; }
     @media only screen and (max-width: 480px) {
       .location--list {
         padding-left: 15px;
@@ -431,6 +434,8 @@ html, body {
     left: 0;
     right: 0;
     z-index: 1; }
+  .testimonials--container.full {
+    width: 100%; }
   .testimonials--container.swiper-container {
     display: flex;
     flex-direction: column;
@@ -440,10 +445,17 @@ html, body {
     padding-left: 20px;
     padding-right: 20px;
     z-index: 2; }
+    @media only screen and (max-width: 1200px) {
+      .testimonials--container.swiper-container {
+        width: 100%;
+        padding: 0; } }
   .testimonials--container .swiper-wrapper {
     height: auto; }
   .testimonials--container .swiper-slide {
     flex-direction: column; }
+    @media only screen and (max-width: 1200px) {
+      .testimonials--container .swiper-slide {
+        padding: 0 20px; } }
   .testimonials--logo {
     width: 120px;
     height: 61px;
@@ -674,6 +686,8 @@ html, body {
     padding-bottom: 15px;
     border-bottom: 1px solid #716658;
     width: 320px; }
+    .contacts--rezervation-item__error {
+      border-bottom: 1px solid #ff4e49; }
     @media only screen and (max-width: 480px) {
       .contacts--rezervation-item {
         width: 100%; } }
